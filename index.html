@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Global</title>
+    <!-- Importa Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Importa PapaParse -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Grafico 1 -->
+    <div class="container">
+        <h1 class="titulo">Temperatura Global<br> <h2>Teste</h2></h1>
+    </div>
+    <div class="divgeral">
+        <canvas id="grafico"></canvas>
+    </div>
+
+    <!-- Grafico 2 -->
+    <h1 class="container" style="width: 400px;">Temperatura <br> Grafico interativo</h1>
+    <div class="divgeral" style="padding-bottom: 0;">
+        <canvas id="grafico2"></canvas>
+    </div>
+    <!-- botao selecionavel-->
+    <select id="mesSelect" style="background-color: #215fcabe; margin-bottom: 100px; padding: 10px;">
+        <option value="media">Média Anual</option>
+        <option value="janeiro">Janeiro</option>
+        <option value="fevereiro">Fevereiro</option>
+        <option value="marco">Março</option>
+        <option value="abril">Abril</option>
+        <option value="maio">Maio</option>
+        <option value="junho">Junho</option>
+        <option value="julho">Julho</option>
+        <option value="agosto">Agosto</option>
+        <option value="setembro">Setembro</option>
+        <option value="outubro">Outubro</option>
+        <option value="novembro">Novembro</option>
+        <option value="dezembro">Dezembro</option>
+    </select>
+
+    <!-- Grafico 3 -->
+    <h1 class="container" style="width: 300px;">Grafico em Pontos</h1>
+    <div class="divgeral2">
+        <canvas id="graficoScatterMeses"></canvas>
+    </div>
+</body>
+<footer style="text-align:center; margin-top:20px; font-size:14px; color:#555;">
+  Dados de referência: 
+  <a href="https://data.giss.nasa.gov/gistemp/tabledata_v3" target="_blank">
+    NASA GISS Surface Temperature Analysis
+  </a>
+</footer>
+</html>

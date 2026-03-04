@@ -1,0 +1,29 @@
+
+/*Grafico 1*/
+.container {
+    width: 40%;
+    margin: auto;
+    background-color: #215fcabe;
+    text-align: center;
+    border-radius: 10px;
+}
+.divgeral {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 50vh;
+    padding-bottom: 50px;
+}
+
+/*grafico 2*/
+.divgeral2 {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 60vh;
+    padding-bottom: 50px;
+}
